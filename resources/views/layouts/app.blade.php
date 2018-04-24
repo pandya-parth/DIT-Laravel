@@ -22,6 +22,7 @@
     @include('shared.header')    
 
     @include('shared.join')    
+    
     @yield('content')    
     @include('shared.support') 
 
