@@ -1,0 +1,250 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*==============================================================
+	Common Styles Initials
+==============================================================*/
+
+html {
+	-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+	width: 100%;
+	height: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+input[type="submit"] {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 400;
+	width: 100%;
+	min-height: 100%;
+	color: #666;
+	background: url(../images/bg-pattern.png) #e6e9ed;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+	color: #555;
+}
+
+a:hover, a:focus{
+	outline: none;
+	text-decoration: none;
+}
+
+input, textarea, select {
+	outline: none;
+	resize: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a, input, button{
+	outline:none !important;
+}
+
+ button::-moz-focus-inner {
+ 	border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+img {
+	border: 0;
+	vertical-align: top;
+	max-width: 100%;
+	height: auto;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p {
+	margin: 0 0 15px 0;
+	padding: 0;
+}
+
+h2{
+	font-size: 18px;
+	font-weight: 700;
+	font-style: italic;
+	color: #182137;
+	text-transform: uppercase;
+}
+h3{
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #182137;
+}
+
+/*==============================================================
+	Header Style
+==============================================================*/
+header{
+	padding: 14px 0 13px;
+	-webkit-box-shadow: 0 0 1px rgba(0,0,0,.33), 0 1px 10px rgba(0,0,0,.3);
+	-moz-box-shadow: 0 0 1px rgba(0,0,0,.33), 0 1px 10px rgba(0,0,0,.3);
+	box-shadow: 0 0 1px rgba(0,0,0,.33), 0 1px 10px rgba(0,0,0,.3);
+	background: url(../images/bg-pattern.png) #f2f3f5;
+}
+
+/*==============================================================
+	Join Our Team Section Style
+==============================================================*/
+.join-our-team-section{
+	font-size: 13px;
+	line-height: 26px;
+	color: #4d4d55;
+	padding: 13px 0 20px;
+}
+.join-our-team-section h2{
+	margin-bottom: 19px;
+}
+
+/*==============================================================
+	Basic Information Section Style
+==============================================================*/
+.basic-info-section{
+	background-color: rgba(214,218,220,.34);
+	-webkit-box-shadow: inset 0 1px 9px rgba(0,0,0,.19);
+	-moz-box-shadow: inset 0 1px 9px rgba(0,0,0,.19);
+	box-shadow: inset 0 1px 9px rgba(0,0,0,.19);
+	padding: 27px 0 50px;
+}
+.basic-info-section h3{
+	margin-bottom: 12px;
+}
+.basic-info-form{}
+.basic-info-form .form-group{
+	margin-bottom: 20px;
+}
+
+.basic-info-form .form-group > div{
+	width: 100% !important;
+	padding: 0;
+}
+.basic-info-form .form-horizontal .form-group{
+	margin-left: 0;
+	margin-right: 0;
+}
+.basic-info-form label{
+	font-size: 13px;
+	color: #182137;
+	font-weight: 400;
+	display: block;
+	margin-bottom: 9px;
+}
+.basic-info-form .form-control{
+	height: 39px;
+	border: 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #fff;
+	-webkit-box-shadow: 0 1px #fff, inset 0 1px 4px rgba(0,0,0,.51);
+	-moz-box-shadow: 0 1px #fff, inset 0 1px 4px rgba(0,0,0,.51);
+	box-shadow: 0 1px #fff, inset 0 1px 4px rgba(0,0,0,.51);
+}
+.submit-btn{
+	position: relative;
+	width: 115px;
+	height: 31px;
+
+}
+.submit-btn .submit-icon{
+	background: url(../images/submit-icon.png) no-repeat;
+	width: 22px;
+	height: 23px;
+	position: absolute;
+	left: 4px;
+	top: 4px;
+}
+.basic-info-form .submit{
+	font-size: 14px;
+	color: #ffffff;
+	border: 0;
+	padding-left: 15px;
+	text-transform: uppercase;
+	letter-spacing: 0.140em;
+	width: 115px;
+	height: 31px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background-color: #cd154f;
+	background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.13), rgba(255,255,255,.13));
+	background-image: -moz-linear-gradient(bottom, rgba(0,0,0,.13), rgba(255,255,255,.13));
+	background-image: -o-linear-gradient(bottom, rgba(0,0,0,.13), rgba(255,255,255,.13));
+	background-image: -ms-linear-gradient(bottom, rgba(0,0,0,.13), rgba(255,255,255,.13));
+	background-image: linear-gradient(to top, rgba(0,0,0,.13), rgba(255,255,255,.13));
+}
+
+/*==============================================================
+	Support Section Style
+==============================================================*/
+.support-wrap{
+	padding: 42px 0 9px;
+}
+.support-wrap a{
+	display: inline-block;
+	font-size: 12px;
+	color: #524c92;
+	text-decoration: underline;
+}
+
+/*==============================================================
+	Footer Style
+==============================================================*/
+footer{
+	font-size: 12px;
+	color: #524c92;
+	padding: 30px 0 23px;
+	background-color: #000;
+	background-image: -webkit-linear-gradient(left, #162134, #1f2140 50%, #362159 80%);
+	background-image: -moz-linear-gradient(left, #162134, #1f2140 50%, #362159 80%);
+	background-image: -o-linear-gradient(left, #162134, #1f2140 50%, #362159 80%);
+	background-image: -ms-linear-gradient(left, #162134, #1f2140 50%, #362159 80%);
+	background-image: linear-gradient(to right, #162134, #1f2140 50%, #362159 80%);
+}
+footer a{
+	color: #524c92;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+footer a:hover{
+	color: #ffffff;
+}
+
+/*==============================================================
+	Responsive Media
+==============================================================*/
+@media (max-width: 767px){
+	footer{text-align: center;}
+	footer .text-right{text-align: center; padding-top: 10px;}
+}
