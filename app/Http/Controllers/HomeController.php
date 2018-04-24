@@ -51,7 +51,7 @@ class HomeController extends Controller
                         });
 
 	      // After success redirect back
-	      return redirect()->back()->with('success', "We really appreciate you giving us a moment of your time today. Our representative will get back to your shortly with a reply.");
+	      return redirect()->back()->with('success', "We really appreciate you giving us a moment of your time today. Our representative will get back to you shortly with a reply.");
         }
         catch(\Exception $e)
         {
