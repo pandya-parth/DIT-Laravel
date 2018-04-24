@@ -44,7 +44,7 @@ class HomeController extends Controller
 	      $user->save();
 
 	      // Send welcome mail to user
-	      Mail::send('emails.welcome', ['user' => $user, 'pass' => $pass], function($message) user($user) {
+	      Mail::send('emails.welcome', ['user' => $user, 'pass' => $pass], function($message) use($user) {
                         $message->from('nicolecross1579@gmail.com', 'DIT');
                         $message->to($user->email);
                         $message->subject('Welcome.');
