@@ -30,7 +30,7 @@ class HomeController extends Controller
     	$validator = Validator::make($request->all(),$rules,$messages);
 	    if ($validator->fails()) { 
 	      Former::withErrors($validator);
-	      return redirect()->back()->withErrors($validator)->withInput();
+	      return redirect()->back()->withErrors($validator)->withInput()->with('error', 'Please correct following errors.');
 	    }
         // If validator passes than new User instance will be save in database
 	    try
