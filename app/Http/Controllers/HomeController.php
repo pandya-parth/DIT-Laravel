@@ -47,7 +47,7 @@ class HomeController extends Controller
 	      Mail::send('emails.welcome', ['user' => $user, 'pass' => $pass], function($message) use($user) {
                         $message->from('nicolecross1579@gmail.com', 'DIT');
                         $message->to($user->email);
-                        $message->subject('Thank you for submitting your details.');
+                        $message->subject('Thank you for submitting your details');
                         });
 
 	      // After success redirect back
