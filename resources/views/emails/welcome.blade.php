@@ -55,6 +55,5 @@
 			</td>
 		</tr>
 	</table>
-	{!! dd('hi') !!}
 </body>
 </html>
